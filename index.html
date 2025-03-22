@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI 聊天助手</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="images/icons/favicon.ico">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>AI 聊天助手</h1>
+        </header>
+        
+        <div class="controls">
+            <div class="select-group">
+                <label for="ai-select">选择 AI：</label>
+                <select id="ai-select">
+                    <option value="ChatGPT" data-icon="chatgpt.png">ChatGPT</option>
+                    <option value="Claude" data-icon="claude.png">Claude</option>
+                    <option value="Qwen" data-icon="qwen.png">Qwen</option>
+                    <option value="Grok" data-icon="grok.png">Grok</option>
+                    <option value="DeepSeek" data-icon="deepseek.png">DeepSeek</option>
+                </select>
+            </div>
+            <div class="select-group">
+                <label for="model-select">选择模型：</label>
+                <select id="model-select">
+                    <option value="">请先选择 AI</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="chat-history" id="chat-history">
+            <!-- 聊天记录将在这里动态添加 -->
+        </div>
+
+        <div class="input-area">
+            <textarea id="user-input" placeholder="请输入您的问题..."></textarea>
+            <div class="button-group">
+                <button id="send-btn">发送</button>
+                <button id="clear-btn">清空</button>
+                <button id="end-btn">结束</button>
+                <button id="export-btn">导出聊天</button>
+            </div>
+        </div>
+    </div>
+    <script src="js/chat.js"></script>
+</body>
+</html> 
